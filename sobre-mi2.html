@@ -3,6 +3,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Esta es la etiqueta Title de Sobre mí 2</title>
+    <style>
+        .interdiv div {
+            filter: blur(3px);
+        }    
+        div .chupidiv {
+    text-align: right;
+}    
+.herencias >p {
+    text-align: center;
+}
+    </style>
 </head>
 <body>
     <header>
@@ -36,6 +47,19 @@ Cuando despliegas esto aparece este texto que estás leyendo, pero es la segunda
 </code>
 </div>
 </section>
+<section>
+    <div class="interdiv">esto es un div, pero <div>con otro div dentro, para hacer pruebas</div>para ver que pasa con esto del css</div>
+</section>
+<section>
+    <div>este es el segundo efecto <div class="chupidiv">el de hacer un estilo de un div que está fuera de un div</div>o algo así le entendí a Carlos</div>
+</section>
+<div class="herencias">
+    <div class="parrafos">
+        <p>parrafo 1</p>
+    </div>
+    <p>parrafo 2
+    </p>
+</div>
     <footer>
         <address>
         Este es el footer desde donde <a href="mailto:mrpablogf@gmail.com>">se me envía un correo</a>
