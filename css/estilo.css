@@ -12,3 +12,91 @@ nav>ul {
 body {
     margin-top: 80px;
 }
+.cm {
+    background: brown;
+    width: 4cm;
+    height: 4cm;
+    text-align: center;
+    line-height: 3.5cm;
+}
+.mm {
+    background: rgb(108, 158, 33);
+    width: 50mm;
+    height: 50mm;
+    text-align: right;
+    padding: 15mm;
+    color:azure
+}
+.pg {
+    background: rgb(155, 57, 153);
+    width: 3in;
+    height: 3in;
+    text-align: left;
+    font-size: 15;
+    color:rgb(255, 255, 255)
+}
+.px {
+    background: rgb(42, 42, 165);
+    width: 400px;
+    height: 400px;
+    text-align: left;
+    padding: 350px;
+    line-height: 35px;
+    color:green;
+    font-size: 150px;
+}
+.pt {
+    background: rgb(54, 33, 158);
+    width: 100pt;
+    height: 100pt;
+    font-size: 20pt;
+    text-align: center;
+    filter:blur(3pt);
+}
+.pc {
+    background: rgb(171, 210, 31);
+    width: 40pc;
+    color:black;
+    height: 45pc;
+    text-align: center;
+    line-height: 50pc;
+}
+.desastre {
+    display: flex;
+    flex-wrap: wrap;
+}
+.rm {
+    background: blueviolet;
+    width: 23rem;
+    height: 23rem;
+}
+.em {
+    background: bisque;
+    width: 22em;
+    height: 23em;
+}
+.rem {
+    background: rgb(50, 20, 94);
+    width: 22rem;
+    height: 23rem;
+}
+.fuentes {
+    font-size: 23px;
+}
+.vh {
+    background: brown;
+    width: 50vh;
+    font-size: 15px;
+}
+.vw {
+    background: rgb(34, 109, 141);
+    color:black;
+    width: 60vw;
+    height: 25vw;
+    font-size: 12px;
+}
+.porcentaje {
+    background: burlywood;
+    width: 50%;
+    height: 50%;
+}
