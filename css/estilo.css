@@ -101,3 +101,7 @@ body {
     width: 50%;
     height: 50%;
 }
+p.listado {
+    font-size: 14px;
+    font-family: cursive;
+}
