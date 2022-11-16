@@ -105,3 +105,22 @@ p.listado {
     font-size: 14px;
     font-family: cursive;
 }
+.css1{
+    background: green;
+    }
+    .volador {
+    background: cadetblue;
+    }
+    .jaguar.cocodrilo{
+        font-weight: bold;
+        font-family:Tahoma
+    }
+    p {
+        font-size: 32px;
+    }
+    #ejemplo {
+        background: chartreuse;
+    }
+    div, p {
+        font-size: 15px;
+    }
