@@ -1,0 +1,44 @@
+nav>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    background: white;
+    margin: 0px;
+    top: 0;
+    height:50px
+    }
+    body {
+        margin-top: 80px;
+    }
+.saludo {
+        background: yellow;
+        padding: 50px;
+        position: sticky;
+        top: 0px;
+    }
+.bolas {
+    display: grid;
+    justify-content: space-around;
+}
+.roja {
+    position:relative;
+    top: 200px; left: 150px;
+}
+.verde {
+    position:absolute;
+    right: 325px;
+}
+.marron {
+    position:fixed;
+}
+.negra {
+    position:static;
+}
+.azul {
+    position:sticky;
+top: 55px; 
+right: 55px;
+}
+.lorem{font-size: 25px;}
