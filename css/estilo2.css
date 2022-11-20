@@ -2,11 +2,11 @@ nav>ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
     position: fixed;
     width: 100%;
     background: white;
     margin: 0px;
-    top: 0;
     height:50px
     }
     body {
@@ -15,8 +15,8 @@ nav>ul {
 .saludo {
         background: yellow;
         padding: 50px;
-        position: sticky;
-        top: 0px;
+        position: fixed;
+        top: 100px;
     }
 .bolas {
     display: grid;
@@ -24,7 +24,7 @@ nav>ul {
 }
 .roja {
     position:relative;
-    top: 200px; left: 150px;
+    top: 200px; left: 100px;
 }
 .verde {
     position:absolute;
@@ -32,13 +32,54 @@ nav>ul {
 }
 .marron {
     position:fixed;
+    top:250px;
 }
 .negra {
     position:static;
 }
 .azul {
-    position:sticky;
+position:sticky;
 top: 55px; 
 right: 55px;
 }
 .lorem{font-size: 25px;}
+.p1 {
+    background:rgb(43, 13, 134)
+}
+.p2 {
+    background:green
+}
+.p3 {
+    background:rgb(117, 0, 128)
+}
+.p4 {
+    background:rgb(195, 64, 16);
+    font-size: 16px;
+}
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+  .pruebagrid {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    background:red;
+}
+.diplayno {
+    display: none;
+}
+.hidden {
+    visibility: hidden;
+}
+.opacity {
+    background:blue;
+    opacity: 0.5;
+    }
+.doscolumnas {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
