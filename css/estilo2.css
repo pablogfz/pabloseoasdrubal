@@ -104,12 +104,11 @@ font-size:25px;
     width: 970;
     background-color: red;
     background-image: url(/imagenes/pingus.jpg);
-    margin: 80px auto;
-    padding: 60px;
+    margin: 82px auto;
+    padding: 80px;
     background-attachment: inherit;
-    background-size: 117px 92px;
-    border: 112px;
-    background-repeat: no-repeat;
+    background-size: 179px 119px;
+    background-repeat: inherit;
 }
 .gorilas {
     background-image: url(/imagenes/gorila.jpg);
@@ -119,3 +118,38 @@ font-size:25px;
     padding-left: 6.2em;
     background-position-y: center;
 }
+[alt] {
+    border: 40px solid green;
+}
+[title] {
+    border: 10px solid black;
+}
+a[href^="http:"] {
+    padding-right: 2em;
+    background-image: url(/imagenes/gorila.jpg);
+    z-index: 3;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: red;
+}
+p:first-child {
+    background: grey;
+}
+p:first-letter {
+    color: yellow;
+}
+::selection {
+    background: hotpink;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 15px;
+  }
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+  }
+    ::-webkit-scrollbar-thumb {
+    background: rgb(28, 24, 24);
+    border-radius: 10px;}
