@@ -1,16 +1,14 @@
 /*esto es un comentario, si no lo cierras te lo cargas todo*/
+@import "import.css";
 nav>ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     position: fixed;
     width: 100%;
-    background: white;
-    margin: 0px;
-    /*Aquí si querías poner un margen top, el selector es masrgin-top, no solo top*/
-    top: 15;
-    height:50px
-    }
+    background: rgb(84, 42, 42);
+    margin-top: -50px;
+}
 body {
     margin-top: 80px;
 }
@@ -125,4 +123,31 @@ p.listado {
     div, p {
         font-size: 15px;
     }
-    
+    @media all and (max-width: 800px) and (min-width: 400px){
+        p{ 
+            font-family: helvetica;
+            color:rgb(117, 15, 122)
+        }
+        div{
+            background: black;
+            color: white;}
+        nav>ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                position: fixed;
+                width: 100%;
+                background: #bc1010;
+                margin-top: -50px;
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+                margin: -25px;
+            }          
+    }
+    @media all and (min-width: 1886px){
+    * {
+        max-width: 1886px;
+        margin:auto;
+    }
+}
