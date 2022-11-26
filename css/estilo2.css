@@ -1,3 +1,8 @@
+:root{
+    --verde: rgb(27, 143, 108);
+    --morado: rgb(130, 19, 174);
+    --naranja: rgb(225, 128, 32);
+}
 nav>ul {
     list-style: none;
     display: flex;
@@ -15,7 +20,7 @@ nav>ul {
         margin-top: 80px;
     }
 .saludo {
-        background: yellow;
+        background: var(--verde);;
         padding: 50px;
         position: fixed;
         top: 100px;
@@ -46,16 +51,16 @@ right: 55px;
 }
 .lorem{font-size: 25px;}
 .p1 {
-    background:rgb(43, 13, 134)
+    background:var(--morado);
 }
 .p2 {
-    background:green
+    background:var(--verde);
 }
 .p3 {
-    background:rgb(117, 0, 128)
+    background:var(--morado);
 }
 .p4 {
-    background:rgb(195, 64, 16);
+    background:var(--naranja);
     font-size: 16px;
 }
 .div1 {
@@ -67,7 +72,7 @@ right: 55px;
     display: grid;
     justify-content: center;
     justify-items: center;
-    background:red;
+    background:var(--verde);
 }
 .diplayno {
     display: none;
@@ -102,7 +107,7 @@ font-size:25px;
 .imagenfalsa {
     height: 671;
     width: 970;
-    background-color: red;
+    background-color: var(--morado);
     background-image: url(/imagenes/pingus.jpg);
     margin: 82px auto;
     padding: 80px;
@@ -119,7 +124,7 @@ font-size:25px;
     background-position-y: center;
 }
 [alt] {
-    border: 40px solid green;
+    border: 40px solid var(--verde);
 }
 [title] {
     border: 10px solid black;
@@ -153,3 +158,21 @@ p:first-letter {
     ::-webkit-scrollbar-thumb {
     background: rgb(28, 24, 24);
     border-radius: 10px;}
+    .funcionescss{
+        width:max(50%, 600px);
+        background:var(--verde);
+    }
+    .funcionescss2{
+        width:min(50%, 600px);
+        background:red;
+    }
+    .funcionescss3{
+        width:calc(50% + 600px);
+        background:grey;
+    }
+    .funcionescss4{
+        margin:auto;
+        text-align:center;
+        width:calc(100% - 80px);
+        background:yellow;
+    }

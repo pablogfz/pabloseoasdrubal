@@ -151,3 +151,10 @@ p.listado {
         margin:auto;
     }
 }
+.divcentro{
+    margin:auto;
+    width:250px;
+    background:green;
+    color:beige;
+    text-align:center;
+}
