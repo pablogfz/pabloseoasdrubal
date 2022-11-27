@@ -18,9 +18,10 @@ nav>ul {
     }
     body {
         margin-top: 80px;
+        font-family: 'catamaran';
     }
 .saludo {
-        background: var(--verde);;
+        background: var(--verde);
         padding: 50px;
         position: fixed;
         top: 100px;
@@ -175,4 +176,15 @@ p:first-letter {
         text-align:center;
         width:calc(100% - 80px);
         background:yellow;
+    }
+    .animaciones {
+        background: rgb(12, 75, 60);
+        color:white;
+        animation-name: cambiocolor;
+    animation-duration:3s; 
+    animation-iteration-count: infinite;   }
+    @keyframes cambiocolor{
+        0%{background: rgb(12, 75, 60);}
+        50%{background:burlywood;}
+        100% {background:red}    
     }
