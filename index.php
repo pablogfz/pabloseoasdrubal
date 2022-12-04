@@ -1,44 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-          <meta charset="UTF-8">
-          <link rel="stylesheet" href="css/estilo.css">
-          <!-- <link rel="stylesheet" href="css/import.css"-->
-    <title>Esta es la etiqueta Title</title>
-    <!-- Problema comentado en Primerito-->
-    <style>    
-       .intro {
-    background: blue;
-    color: white;
-    padding: 8px;
-    margin-top: 8px;
-    margin-bottom: 8px;}
-    .intro {
-    background: brown;
-    color: darkblue;
-}
-
-    </style>
-</head>
-    <body>
-        <!-- Esto de aquí es un comentario-->
-    <header>
-        <nav class="pruebarroba">
-            <ul>
-                <li><a href="/primerito.html">Primerito</a></li>
-                <li><a href="/sobre-mi2.html">Sobre mi</a></li>
-                <li><a href="/contacto.html">contacto</a></li>
-                <li><a href="/carpeta/archivo-carpeta.html">Archivo dentro de carpeta</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Matar_un_ruise%C3%B1or" target="_blank">Enlace a wikipedia</a>
-                <li><a href="/CSS2.html">CSS2</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
+<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
+<?php echo $_SERVER['DOCUMENT_ROOT']; ?>
         <section id="section1">
-            <h1 class="h1prueba1" style="color:blueviolet">Hola, soy Pablo</h1>
+            <h1 class="h1prueba1" style="color:blueviolet">Hola, soy Pablo <?php echo date("l/z"); ?></h1>
             <div title="Este texto se lee cuando haces hover en este elemento">esto está en un div</div>
-            <p>pero esto <b style="color:brown">no</b>, <a href=index.html>no</a>, no</p>
+            <p>pero esto <b style="color:brown">no</b>, <a href=index.php>no</a>, no</p>
             <pablo>etiqueta <p>Pablo</p> de <br>prueba</pablo><br>
             <div class="intro">este div tiene una etiqueta <span>en su interior</span></div>
             <div class="intro">Este es el div que <span>lleva un span dentro y, además, un <p>pe</p></span></div>
@@ -58,11 +24,7 @@
         <img src="/imagenes/htmlcheatsheet.png" loading="lazy" width="600" height="800" title="título de chuleta html" alt="imagen muy grande sobre etiquetas html">
     </picture>
     </section>
-    <div class="divcentro">esto es un div que quiero centrar</div>
-    <footer>
-        <address>
-        Este es el footer desde donde <a href="mailto:mrpablogf@gmail.com>">se me envía un correo</a>
-    </address>
-    </footer>
-    </body>
+    <div class="divcentro">esto es un div que quiero centrar</div>    
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
     </html>
+

@@ -2,28 +2,12 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="/css/fonts.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo2.css">
     <title>Esta es la hoja para el CSS de la última clase</title>
 </head>
 <body>
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/primerito.html">Primerito</a></li>
-                <li><a href="/sobre-mi2.html">Sobre mi</a></li>
-                <li><a href="/contacto.html">contacto</a></li>
-                <li><a href="/carpeta/archivo-carpeta.html">Archivo dentro de carpeta</a></li>
-                <li><a href="http://es.wikipedia.org/wiki/Matar_un_ruise%C3%B1or" target="_blank">Enlace a wikipedia</a>
-        </li>
-            </ul>
-            <div class="cerrarelemento">X</div>
-        </nav>
-    </header>
     <h1 class="saludo">¡Venga, CSS2, calienta, que sales!</h1>
 </body>
 <div class="bolas">
@@ -126,4 +110,5 @@
       <div class="gorilas" title="gorilas";>qué pasa que no veo esto ¡Ah, vale! Ahora sí</div>
       <a href="http://es.wikipedia.org/wiki/Matar_un_ruise%C3%B1or" target="_blank" style="font-size:45px";>Enlace a wikipedia</a>
       <div class="animaciones">esto es un div para probar animaciones</div>
+      <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
 </html>

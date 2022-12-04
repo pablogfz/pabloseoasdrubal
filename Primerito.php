@@ -1,35 +1,5 @@
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-          <meta charset="UTF-8">
-          <link rel="stylesheet" href="css/estilo.css">
-    <title>Esta es la etiqueta Inicio de contacto, que a ver si ahora carga</title>
-     <!-- En este CSS el problema, por el que no te está funcionando, es que te faltan los guiones en margin-top y margin-bottom-->
-    <style>
-        .css3{
-background: red;
-color: black;
-padding: 25px;
-margin-top: 25px;
-margin-bottom: 25px;
-}
-    </style>
-</head>
-<body>
-    <header>
-      
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/primerito.html">Primerito</a></li>
-                <li><a href="/sobre-mi2.html">Sobre mi</a></li>
-                <li><a href="/contacto.html">contacto</a></li>
-                <li><a href="/carpeta/archivo-carpeta.html">Archivo dentro de carpeta</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Matar_un_ruise%C3%B1or" target="_blank">Enlace a wikipedia</a>
-                <li><a href="/CSS2.html">CSS2</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
+            </header>
     <h1>¡Venga, primerito, tú puedes!</h1>
     <blockquote cite="https://es.wikipedia.org/wiki/Salamandra_salamandra">La presencia de salamandras indica la buena salud del ecosistema en el que aparecen. <cite>Aristóteles</cite></blockquote>
     <section>
@@ -169,10 +139,6 @@ margin-bottom: 25px;
             </p>
         </div>
     </section>
-    <footer>
-        <address>
-        Este es el footer desde donde <a href="mailto:mrpablogf@gmail.com>">se me envía un correo</a>
-    </address>
-    </footer>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
 </body>
 </html>

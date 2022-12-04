@@ -1,4 +1,5 @@
 <html>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
           <meta charset="UTF-8">
@@ -6,19 +7,6 @@
     <title>Esta es la etiqueta Title de contacto, que veo que carga, pero no enlaza</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/primerito.html">Primerito</a></li>
-                <li><a href="/sobre-mi2.html">Sobre mi</a></li>
-                <li><a href="/contacto.html">contacto</a></li>
-                <li><a href="/carpeta/archivo-carpeta.html">Archivo dentro de carpeta</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Matar_un_ruise%C3%B1or" target="_blank">Enlace a wikipedia</a>
-                <li><a href="/CSS2.html">CSS2</a></li>
-            </ul>
-        </nav>
-    </header>
     <h1>Y esta es la página de contacto, que a ver si tira, pues se ve que no, cago en la leche</h1>
     <table>
         <tr id="Tabla-prueba">
@@ -66,10 +54,5 @@
 <div class="porcentaje">% = Porcentaje del tamaño del elemento padre</div>
 </div>
     </section>
-    <footer>
-        <address>
-        Este es el footer desde donde <a href="mailto:mrpablogf@gmail.com>">se me envía un correo</a>
-    </address>
-    </footer>
-</body>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
 </html>
