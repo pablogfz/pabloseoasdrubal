@@ -1,6 +1,6 @@
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
-/* include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php' */?>
+/* include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php' mucho ojo porque estos comentarios deben estar dentro de las ps de php, si no, nanai*/?>
 <?php echo $_SERVER['DOCUMENT_ROOT']; ?>
         <section id="section1">
             <h1 class="h1prueba1" style="color:blueviolet">Hola, soy Pablo <?php echo date("l/z"); ?></h1>
@@ -47,7 +47,34 @@
     echo "$variable1". " con punto no da error" . " que punto significa sumar" . "$variable1";
     ?>
         <?php $variable1 = "</p>Variable 100";
-    echo $variable2 ?>
+    echo $variable3 ?>
+
+<?php $variable1 = "Variable 100";
+$variable2 = "Variable 200";
+$variable4 = "Variable 400";
+    if ($variable2 != $variable4){echo "$variable1" . "probando if php va de invocar cosas";}?>
+    <p>
+<?php $variable5 = "Variable 500";
+$variable6 = "Variable 200";
+    if ($variable5 == $variable6){echo "$variable1" . "probando elseif con señores de Cartagena";}
+    elseif($variable5 == 'Variable 500'){
+        echo 'Haciendo cosas con elseif';    }
+    else {
+        echo 'No se cumple la condición';
+    }
+    ?>
+    </p>
+    <p>
+    <?php $variable8 = "Variable 500";
+$variable9 = "Variable 500";
+    if ($variable8 == $variable9){echo "$variable1" . "probando elseif pero sin saber todavía por qué comilla simple y no comilla doble";}
+    elseif($variable5 == 'Variable 500'){
+        echo 'Haciendo cosas con elseif';    }
+    else {
+        echo 'No se cumple la condición';
+    }
+    ?>
+    </p>
     <div class="divcentro">esto es un div que quiero centrar</div>    
     <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
     </html>
