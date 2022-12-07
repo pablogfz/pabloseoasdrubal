@@ -1,6 +1,5 @@
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
-/* include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php' mucho ojo porque estos comentarios deben estar dentro de las ps de php, si no, nanai*/?>
+<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
 <?php echo $_SERVER['DOCUMENT_ROOT']; ?>
         <section id="section1">
             <h1 class="h1prueba1" style="color:blueviolet">Hola, soy Pablo <?php echo date("l/z"); ?></h1>
@@ -75,7 +74,25 @@ $variable9 = "Variable 500";
     }
     ?>
     </p>
-    <div class="divcentro">esto es un div que quiero centrar</div>    
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
+    <div class="divcentro">esto es un div que quiero centrar</div>        
+<div class="php">
+    <form action="accion.php" method="post">
+ <p>Su nombre: <input type="text" name="nombre" /></p>
+ <p>Su edad: <input type="text" name="edad" /></p>
+ <p><input type="submit" /></p>
+ <!-- ¿Contaría como código cualquiera de php? Supongo que no, así que probaré con otra cosa-->
+</form>
+</div>
+<div style="background:red; color:white";>
+<?php
+function cuadrado($núm)
+{
+return $núm * $núm;
+}
+echo cuadrado(8); echo " aquí aparece el cuadrado del número que ponga en el código. La utilidad no se la veo, pero entiendo que debe estar bien";
+?>
+</div>
+
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
     </html>
 
