@@ -1,8 +1,12 @@
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
+<?php 
+$variableconstante1 = "La constancia es la clave, enjabonar, enjuagar y repetir, siempre repetir";
+define ("variableconstante1", "variableconstante modificada con define");
+include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';  error_reporting (0);?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
 <?php echo $_SERVER['DOCUMENT_ROOT']; ?>
         <section id="section1">
             <h1 class="h1prueba1" style="color:blueviolet">Hola, soy Pablo <?php echo date("l/z"); ?></h1>
+            <h1> <?php echo variableconstante1; ?></h1>
             <div title="Este texto se lee cuando haces hover en este elemento">esto está en un div</div>
             <p>pero esto <b style="color:brown">no</b>, <a href=index.php>no</a>, no</p>
             <pablo>etiqueta <p>Pablo</p> de <br>prueba</pablo><br>
@@ -12,7 +16,10 @@
             <div class="intro"><img src="/imagenes/spanvsdiv.jpg" width="600" height="300" alt="este es el alt de la primera imagen subida para este ejercicio"></div>
             <span title="probando con titles para los span">y ahora vamos a probar a <div>poner un div dentro de un span</div></span>
     </section>
-    <?php echo 'HOLA CON PHP';?>
+    <?php echo 'HOLA CON PHP';
+    echo $variableconstante1;
+    define ("variableconstante1", "qué puñetas");
+    ?>
     <?php echo "</p>HOLA CON PHP Y COMILLAS CON P";?>
     <section>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
@@ -47,7 +54,6 @@
     ?>
         <?php $variable1 = "</p>Variable 100";
     echo $variable3 ?>
-
 <?php $variable1 = "Variable 100";
 $variable2 = "Variable 200";
 $variable4 = "Variable 400";

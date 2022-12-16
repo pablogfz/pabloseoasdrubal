@@ -5,7 +5,9 @@
           <meta charset="UTF-8">
           <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST'];?>/css/estilo.css">
           <!-- <link rel="stylesheet" href="css/import.css"-->
-    <title>Esta es la etiqueta Title</title>
+    <title>Esta es la etiqueta Title</title>    
+    <?php if (empty ($variableconstante1))
+    {echo "H1 trucho porque la variableconstante1 no está especificada en esta página";} ?>
     <!-- Problema comentado en Primerito-->
     <style>    
        .intro {
