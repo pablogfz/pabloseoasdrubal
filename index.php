@@ -1,6 +1,7 @@
 <?php 
 $variableconstante1 = "La constancia es la clave, enjabonar, enjuagar y repetir, siempre repetir";
 define ("variableconstante1", "variableconstante modificada con define");
+define ("pagina", "index");
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';  error_reporting (0);?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
 <?php echo $_SERVER['DOCUMENT_ROOT']; ?>
@@ -17,9 +18,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';  error_reporting (0
             <span title="probando con titles para los span">y ahora vamos a probar a <div>poner un div dentro de un span</div></span>
     </section>
     <?php echo 'HOLA CON PHP';
-    echo $variableconstante1;
-    define ("variableconstante1", "qué puñetas");
-    ?>
+    echo variableconstante1;?>
     <?php echo "</p>HOLA CON PHP Y COMILLAS CON P";?>
     <section>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>

@@ -1,5 +1,8 @@
 <html>
-<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
+<?php 
+define ("pagina", "sobre-mi2");
+/* $variableconstante1 =ccc;*/
+include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">

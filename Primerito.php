@@ -1,7 +1,11 @@
-<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
+<?php 
+$variableconstante1 ="¿Hay que especificar la variable antes de la llamada al header para que no se active la constante? Pues parece que sí";
+define ("pagina", "primerito");
+include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
             </header>
     <h1>¡Venga, primerito, tú puedes!</h1>
     <blockquote cite="https://es.wikipedia.org/wiki/Salamandra_salamandra">La presencia de salamandras indica la buena salud del ecosistema en el que aparecen. <cite>Aristóteles</cite></blockquote>
+    <h1> <?php echo $variableconstante1; ?></h1>
     <section>
         <video width="500" height="250" controls muted poster="https://w0.peakpx.com/wallpaper/416/206/HD-wallpaper-bear-and-seagulls-bear-water-seagulls-wild.jpg" preload="auto">
             <source src="/video/oso-pescador.mp4" type="video/mp4">

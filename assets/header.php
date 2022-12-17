@@ -8,7 +8,26 @@
     <title>Esta es la etiqueta Title</title>    
     <?php if (empty ($variableconstante1))
     {echo "H1 trucho porque la variableconstante1 no está especificada en esta página";} ?>
-    <!-- Problema comentado en Primerito-->
+    <?php 
+    switch (constant ("pagina")) {
+        case 'index':
+        echo '<link rel="stylesheet" href="/css/estilo.css">';
+        break;
+        case 'primerito':
+        echo '<link rel="stylesheet" href="/css/estilo.css">';
+        break;
+        case 'contacto':
+        echo '<link rel="stylesheet" href="/css/estilo.css">';
+        /*Como no he cerrado contacto con un break; después del echo, también está llamando a default, o así lo he entendido, vamos*/
+        case 'sobre-mi2':
+        case 'paginanueva':
+        echo '<link rel="stylesheet" href="/css/estilo2.css">';
+        default:
+        echo '<!-- Paso de tu css-->';
+        /*'<link rel="stylesheet" href="/css/pff.css">';*/
+        break;
+    }
+        ?>
     <style>    
        .intro {
     background: blue;
