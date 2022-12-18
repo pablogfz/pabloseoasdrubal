@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
           <meta charset="UTF-8">
           <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST'];?>/css/estilo.css">
           <!-- <link rel="stylesheet" href="css/import.css"-->
@@ -9,6 +9,7 @@
     <?php if (empty ($variableconstante1))
     {echo "H1 trucho porque la variableconstante1 no está especificada en esta página";} ?>
     <?php 
+    include_once $_SERVER['DOCUMENT_ROOT'].'/assets/functions.php';
     switch (constant ("pagina")) {
         case 'index':
         echo '<link rel="stylesheet" href="/css/estilo.css">';
@@ -50,7 +51,8 @@
             <li><a href="/index.php">Inicio</a></li>    
             <li><a href="/primerito.php">Primerito</a></li>
                 <li><a href="/sobre-mi2.php">Sobre mi</a></li>
-                <li><a href="/paginanueva.php">Página hueva</a></li>
+                <li><a href="/paginanueva.php">Página hueva</a>
+                </li><li><a href="/paginanueva2.php">Página nueva2</a></li>
                 <li><a href="/contacto.php">contacto</a></li>
                 <li><a href="/carpeta/archivo-carpeta.php">Archivo dentro de carpeta</a></li>
                 <li><a href="https://es.wikipedia.org/wiki/Matar_un_ruise%C3%B1or" target="_blank">Enlace a wikipedia</a>

@@ -19,6 +19,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';  error_reporting (0
     </section>
     <?php echo 'HOLA CON PHP';
     echo variableconstante1;?>
+    <div> <?php ctas();?></div>
     <?php echo "</p>HOLA CON PHP Y COMILLAS CON P";?>
     <section>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>

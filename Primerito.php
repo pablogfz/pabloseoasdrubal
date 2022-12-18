@@ -1,6 +1,8 @@
 <?php 
 $variableconstante1 ="¿Hay que especificar la variable antes de la llamada al header para que no se active la constante? Pues parece que sí";
 define ("pagina", "primerito");
+define ("enlaceindex","/index.php");
+define ("enlacecontacto","/contacto.php");
 include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
             </header>
     <h1>¡Venga, primerito, tú puedes!</h1>
@@ -15,6 +17,12 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
             <br>
           <iframe loading="lazy" width="500" height="250" src="https://www.youtube.com/embed/7_SAMrDnXOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <?php
+        switch (constant ("pagina")) {
+        case 'primerito':
+        prueba();
+        }
+        ?>
         </section>
         <section>
         <div>
@@ -142,6 +150,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
                 palabras no características del lenguaje, etc.
             </p>
         </div>
+        <?php prueba ();?>
     </section>
     <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
 </body>
