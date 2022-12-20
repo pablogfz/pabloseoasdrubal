@@ -98,7 +98,7 @@ return $núm * $núm;
 echo cuadrado(8); echo " aquí aparece el cuadrado del número que ponga en el código. La utilidad no se la veo, pero entiendo que debe estar bien";
 ?>
 </div>
-
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/tablasql.php';?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
     </html>
 

@@ -48,15 +48,15 @@
     <header>
         <nav class="pruebarroba">
             <ul>
-            <li><a href="/index.php">Inicio</a></li>    
-            <li><a href="/primerito.php">Primerito</a></li>
-                <li><a href="/sobre-mi2.php">Sobre mi</a></li>
-                <li><a href="/paginanueva.php">Página hueva</a>
-                </li><li><a href="/paginanueva2.php">Página nueva2</a></li>
-                <li><a href="/contacto.php">contacto</a></li>
-                <li><a href="/carpeta/archivo-carpeta.php">Archivo dentro de carpeta</a></li>
+            <li><a href="/index">Inicio</a></li>    
+            <li><a href="/primerito">Primerito</a></li>
+                <li><a href="/sobre-mi2">Sobre mi</a></li>
+                <li><a href="/paginanueva">Página hueva</a>
+                </li><li><a href="/paginanueva2">Página nueva2</a></li>
+                <li><a href="/contacto">contacto</a></li>
+                <li><a href="/carpeta/archivo-carpeta">Archivo dentro de carpeta</a></li>
                 <li><a href="https://es.wikipedia.org/wiki/Matar_un_ruise%C3%B1or" target="_blank">Enlace a wikipedia</a>
-                <li><a href="/css2.php">CSS2</a></li>
+                <li><a href="/css2">CSS2</a></li>
             </ul>
         </nav>
     </header>
