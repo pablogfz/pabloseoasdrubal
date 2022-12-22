@@ -7,7 +7,7 @@
           <!-- <link rel="stylesheet" href="css/import.css"-->
     <title>Esta es la etiqueta Title</title>    
     <?php if (empty ($variableconstante1))
-    {echo "H1 trucho porque la variableconstante1 no está especificada en esta página";} ?>
+    {echo "<h1>H1 trucho porque la variableconstante1 no está especificada en esta página</h1>";} ?>
     <?php 
     include_once $_SERVER['DOCUMENT_ROOT'].'/assets/functions.php';
     switch (constant ("pagina")) {
