@@ -7,7 +7,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';  error_reporting (0
 <?php echo $_SERVER['DOCUMENT_ROOT']; ?>
         <section id="section1">
             <h1 class="h1prueba1" style="color:blueviolet">Hola, soy Pablo <?php echo date("l/z"); ?></h1>
-            <h1> <?php echo variableconstante1; ?></h1>
+            <h4> <?php echo variableconstante1; ?></h4>
             <div title="Este texto se lee cuando haces hover en este elemento">esto está en un div</div>
             <p>pero esto <b style="color:brown">no</b>, <a href=index.php>no</a>, no</p>
             <pablo>etiqueta <p>Pablo</p> de <br>prueba</pablo><br>
@@ -98,6 +98,8 @@ return $núm * $núm;
 echo cuadrado(8); echo " aquí aparece el cuadrado del número que ponga en el código. La utilidad no se la veo, pero entiendo que debe estar bien";
 ?>
 </div>
+<?php echo 'HOLA CON PHP2';
+    echo variableconstante1;?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/tablasql.php';?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
     </html>

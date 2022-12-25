@@ -1,0 +1,1 @@
+document.getElementById("averaver"). innerHTML = "H1 con javascript y llamado desde hoja externa";
