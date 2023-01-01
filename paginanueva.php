@@ -8,18 +8,28 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
 <h1 id="averaver"></h1>
 <script src="/scripts/pruebas.js"></script>
 <p id="funciononclic">Función onclic</p>
-<button type="button" onclick='document.getElementById("funciononclic").innerHTML = "¡ESTÁ VIVO!"'>
+<button type="button" onclick='document.getElementById("funciononclic").innerHTML = "¡ESTÁ VIVO!" + testo + malditojs + cosas [2] + clas.nombre + (numeros - 2) + (numeros1 - 4) + (numeros1 / 2) + (numeros1 - 1)';>
 Botón pequeñito</button>
 <div id="selector1"></div>
 <script>
-document.getElementById("selector1").innerHTML = "¡PARDIEZ!"
+let ejemplo = 'Variable con let';
+var testeo = 'Variable con var'; 
+testo = ' El 2023'
+const malditojs = ' lo empiezo odiando las constantes de js';
+let cosas = [' cosa1', ' cosa2', ' cosa azul'];
+let clas = {nombre: ' con cosas ', alternativa: 'clas 3'}
+let numeros = 4;
+let numeros1 = 4;
+let numeros2 = 4;
+let numeros3 = 4;
+document.getElementById("selector1").innerHTML = "¡PARDIEZ!";
 </script>
-<div class="selector5"></div>
+<div class="selector5">Hola</div>
 <script>
 document.getElementsByClassName("selector5")[0].innerHTML = "<h2>¡SAPRISTI!</h2>";
 </script>
-<div class="selector2"></div>
-<div class="selector2"></div>
+<div class="selector2">Hola2</div>
+<div class="selector2">Hola2.1</div>
 <h3>Seleccionado por una etiqueta con js</h3>
 <script>
 const collection = document.getElementsByClassName("selector2");
@@ -30,4 +40,43 @@ collection[i].innerHTML = "No entiendo esto del cero. Espera, a lo mejor lo que 
 <script>
 document.getElementsByTagName("h3")[0].innerHTML = "<h2>Te convertí en h2, por listillo</h2>";
 </script>
+<h3 class="queryselector">queryselector</h3>
+<script>
+document.querySelector('.queryselector').innerHTML = "<h4>Te convertí en h4 con un queryselector</h4>";
+</script>
+<h3 class="prueba100">Prueba 100 </h3>
+<h3 class="prueba100">Prueba 101 </h3>
+<h3 class="prueba100">Prueba 102 </h3>
+<h3 class="prueba100">Prueba 103 </h3>
+<script>
+    /*
+    const collection = document.querySelectorAll('.prueba100');
+    for (let i = 0; i < collection.length; i++) 
+    {collection[i].setAttribute("prueba100" , "prueba101")}
+        /*const collection = document.querySelectorAll('.prueba100');
+    for (let i = 0; i < collection.length; i++) 
+    {collection[i].innerHTML = "esta es la prueba 1000";}*/
+    document.querySelector('.prueba100').innerHTML = '<h1 style="background:red; color:white">¿Prueba 1000?</h1>';
+</script>
+    </script>
+<style>
+    .prueba100{background:black;
+    color: white;}
+    </style>
+    <style>
+    .prueba101{
+    background: red;
+    color: white;
+    width: 75px;
+    text-align: center;}
+    </style>
+    <div id="cambiante"></div>
+    <div class="prueba101" onclick="funcion1()">Y aquí la función</div>
+    <script>
+        function funcion1 (){
+            const collection = document.getElementsByClassName("prueba101");
+            for (let i = 0; i < collection.legnth; i++)
+            {collection[i].classList.add("prueba100");}
+        }
+        </script>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
