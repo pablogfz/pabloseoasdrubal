@@ -1,4 +1,4 @@
-<?php 
+<?php
 define ("pagina", "paginanueva");
 include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';?>
 <?php echo "Prueba noscript"?>
@@ -13,7 +13,7 @@ Botón pequeñito</button>
 <div id="selector1"></div>
 <script>
 let ejemplo = 'Variable con let';
-var testeo = 'Variable con var'; 
+var testeo = 'Variable con var';
 testo = ' El 2023'
 const malditojs = ' lo empiezo odiando las constantes de js';
 let cosas = [' cosa1', ' cosa2', ' cosa azul'];
@@ -51,19 +51,43 @@ document.querySelector('.queryselector').innerHTML = "<h4>Te convertí en h4 con
 <script>
     /*
     const collection = document.querySelectorAll('.prueba100');
-    for (let i = 0; i < collection.length; i++) 
+    for (let i = 0; i < collection.length; i++)
     {collection[i].setAttribute("prueba100" , "prueba101")}
-        /*const collection = document.querySelectorAll('.prueba100');
-    for (let i = 0; i < collection.length; i++) 
+        /*
+    const collection = document.querySelectorAll('.prueba100');
+    for (let i = 0; i < collection.length; i++)
     {collection[i].innerHTML = "esta es la prueba 1000";}*/
-    document.querySelector('.prueba100').innerHTML = '<h1 style="background:red; color:white">¿Prueba 1000?</h1>';
+
+
+    // document.querySelector('.prueba100').innerHTML = '<h1 style="background:red; color:white">¿Prueba 1000?</h1>';
+
+// Creo que esto es lo que querías hacer.
+// Nunca redefinas una constante, llámala distinto
+ const lavidaesbella = document.querySelectorAll(".prueba100");
+ for (let i = 0; i < lavidaesbella.length; i++) {
+  lavidaesbella[i].classList.add("prueba101");
+  lavidaesbella[i].classList.remove("prueba100");
+}
+
+  /*
+  // Siempre hay muchas formas de hacer lo mismo en js.
+  // Quita los: (/*) para probar que esta opción funciona también:
+  // https://www.codingexercises.com/replace-all-instances-of-css-class-in-vanilla-js
+    let a = document.getElementsByClassName( "prueba100" );
+    [...a].forEach( x => x.className += " prueba101" );
+    [...a].forEach( x => x.classList.remove("prueba100") );
+    */
+
 </script>
-    </script>
 <style>
     .prueba100{background:black;
     color: white;}
+
+    <?php /*
+    No es necesario abrir y volver a cerrar la etiqueta style
     </style>
     <style>
+    */ ?>
     .prueba101{
     background: red;
     color: white;
