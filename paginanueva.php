@@ -42,7 +42,7 @@ document.getElementsByTagName("h3")[0].innerHTML = "<h2>Te convertí en h2, por 
 </script>
 <h3 class="queryselector">queryselector</h3>
 <script>
-document.querySelector('.queryselector').innerHTML = "<h4>Te convertí en h4 con un queryselector</h4>";
+document.querySelector('.queryselector').outerHTML = "<h4 class='hola'>Te convertí en h4 con un queryselector</h4>";
 </script>
 <h3 class="prueba100">Prueba 100 </h3>
 <h3 class="prueba100">Prueba 101 </h3>
@@ -64,6 +64,7 @@ document.querySelector('.queryselector').innerHTML = "<h4>Te convertí en h4 con
 // Creo que esto es lo que querías hacer.
 // Nunca redefinas una constante, llámala distinto
  const lavidaesbella = document.querySelectorAll(".prueba100");
+
  for (let i = 0; i < lavidaesbella.length; i++) {
   lavidaesbella[i].classList.add("prueba101");
   lavidaesbella[i].classList.remove("prueba100");
@@ -98,6 +99,8 @@ document.querySelector('.queryselector').innerHTML = "<h4>Te convertí en h4 con
     <div class="prueba101" onclick="funcion1()">Y aquí la función</div>
     <script>
         function funcion1 (){
+        //  alert("Hello! I am an alert box!!");
+
             const collection = document.getElementsByClassName("prueba101");
             for (let i = 0; i < collection.legnth; i++)
             {collection[i].classList.add("prueba100");}
