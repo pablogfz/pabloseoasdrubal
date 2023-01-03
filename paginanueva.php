@@ -42,7 +42,7 @@ document.getElementsByTagName("h3")[0].innerHTML = "<h2>Te convertí en h2, por 
 </script>
 <h3 class="queryselector">queryselector</h3>
 <script>
-document.querySelector('.queryselector').innerHTML = "<h4>Te convertí en h4 con un queryselector</h4>";
+document.querySelector('.queryselector').outerHTML = "<h4 class='hola'>Te convertí en h4 con un queryselector</h4>";
 </script>
 <h3 class="prueba100" id="manolito">Prueba 100 </h3>
 <h3 class="prueba100">Prueba 101 </h3>
@@ -65,6 +65,7 @@ document.querySelector('.queryselector').innerHTML = "<h4>Te convertí en h4 con
 // Nunca redefinas una constante, llámala distinto
 
  const lavidaesbella = document.querySelectorAll(".prueba100");
+
  for (let i = 0; i < lavidaesbella.length; i++) {
   lavidaesbella[i].classList.add("prueba101");
   lavidaesbella[i].classList.remove("prueba100");
