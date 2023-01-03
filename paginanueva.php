@@ -44,25 +44,26 @@ document.getElementsByTagName("h3")[0].innerHTML = "<h2>Te convertí en h2, por 
 <script>
 document.querySelector('.queryselector').innerHTML = "<h4>Te convertí en h4 con un queryselector</h4>";
 </script>
-<h3 class="prueba100">Prueba 100 </h3>
+<h3 class="prueba100" id="manolito">Prueba 100 </h3>
 <h3 class="prueba100">Prueba 101 </h3>
 <h3 class="prueba100">Prueba 102 </h3>
 <h3 class="prueba100">Prueba 103 </h3>
 <script>
     /*
-    const collection = document.querySelectorAll('.prueba100');
-    for (let i = 0; i < collection.length; i++)
-    {collection[i].setAttribute("prueba100" , "prueba101")}
+    const pinguino = document.querySelectorAll('.prueba100');
+    for (let b = 0; i < pinguino.length; b++)
+    {collection[b].setAttribute(".prueba100" , ".prueba101")}
         /*
     const collection = document.querySelectorAll('.prueba100');
     for (let i = 0; i < collection.length; i++)
-    {collection[i].innerHTML = "esta es la prueba 1000";}*/
+    {collection[i].innerHTML = "esta es la prueba 1000";}
 
 
     // document.querySelector('.prueba100').innerHTML = '<h1 style="background:red; color:white">¿Prueba 1000?</h1>';
 
 // Creo que esto es lo que querías hacer.
 // Nunca redefinas una constante, llámala distinto
+
  const lavidaesbella = document.querySelectorAll(".prueba100");
  for (let i = 0; i < lavidaesbella.length; i++) {
   lavidaesbella[i].classList.add("prueba101");
@@ -94,13 +95,18 @@ document.querySelector('.queryselector').innerHTML = "<h4>Te convertí en h4 con
     width: 75px;
     text-align: center;}
     </style>
-    <div id="cambiante"></div>
-    <div class="prueba101" onclick="funcion1()">Y aquí la función</div>
+    <div id="prueba101" onclick="funcion1()" class ="prueba101">Y aquí la función</div>    
     <script>
+        /*
         function funcion1 (){
-            const collection = document.getElementsByClassName("prueba101");
-            for (let i = 0; i < collection.legnth; i++)
-            {collection[i].classList.add("prueba100");}
+            const funcion2 = document.getElementsByClassName("prueba101");
+            for (let i = 0; i < funcion2.legnth; i++)
+            {funcion2[i].classList.add("prueba100");}
         }
+        */
+    function funcion1(){
+    document.getElementById('manolito').setAttribute("class", "prueba101");
+}
         </script>
+        
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
