@@ -48,11 +48,13 @@ document.querySelector('.queryselector').outerHTML = "<h4 class='hola'>Te conver
 <h3 class="prueba100">Prueba 101 </h3>
 <h3 class="prueba100">Prueba 102 </h3>
 <h3 class="prueba100">Prueba 103 </h3>
+<h3 class="prueba1001" id="demo2">Prueba 104</h3>
+<h3 class="prueba100" id="demo">Piruletas</h3>
 <script>
     /*
     const pinguino = document.querySelectorAll('.prueba100');
     for (let b = 0; i < pinguino.length; b++)
-    {collection[b].setAttribute(".prueba100" , ".prueba101")}
+    {pinguino[b].setAttribute(".prueba100" , ".prueba101")}
         /*
     const collection = document.querySelectorAll('.prueba100');
     for (let i = 0; i < collection.length; i++)
@@ -63,9 +65,8 @@ document.querySelector('.queryselector').outerHTML = "<h4 class='hola'>Te conver
 
 // Creo que esto es lo que querías hacer.
 // Nunca redefinas una constante, llámala distinto
-
+*/
  const lavidaesbella = document.querySelectorAll(".prueba100");
-
  for (let i = 0; i < lavidaesbella.length; i++) {
   lavidaesbella[i].classList.add("prueba101");
   lavidaesbella[i].classList.remove("prueba100");
@@ -79,35 +80,44 @@ document.querySelector('.queryselector').outerHTML = "<h4 class='hola'>Te conver
     [...a].forEach( x => x.className += " prueba101" );
     [...a].forEach( x => x.classList.remove("prueba100") );
     */
-
-</script>
+   </script>
 <style>
     .prueba100{background:black;
-    color: white;}
-
-    <?php /*
-    No es necesario abrir y volver a cerrar la etiqueta style
-    </style>
-    <style>
-    */ ?>
+    color: white;
+text-align:center;}
+.prueba10000{background:black;
+    color: white;
+text-align:center;}
     .prueba101{
     background: red;
     color: white;
     width: 75px;
     text-align: center;}
+    .prueba1001{background:black;
+    color: white;
+text-align:center;}
     </style>
+    
     <div id="prueba101" onclick="funcion1()" class ="prueba101">Y aquí la función</div>    
-    <script>
-        /*
-        function funcion1 (){
-            const funcion2 = document.getElementsByClassName("prueba101");
-            for (let i = 0; i < funcion2.legnth; i++)
-            {funcion2[i].classList.add("prueba100");}
-        }
-        */
+   
+   <script>
     function funcion1(){
-    document.getElementById('manolito').setAttribute("class", "prueba101");
-}
-        </script>
-        
+    document.getElementById('manolito').setAttribute("class", "prueba100");
+    }
+</script>
+
+<script>  
+/* 
+alert("Hello! I am an alert box!");*/
+const pum = document.getElementsByClassName("prueba1001");
+pum [0].innerHTML = "¡Esto no tiene sentido!";
+</script>
+<div id="prueba10000" class ="prueba10000">Y aquí la función2</div>   
+ 
+<script>
+const element = document.getElementById("prueba10000");
+element.addEventListener("click", function() {
+document.getElementById("demo").outerHTML = "<h3>demonios</h3>"});
+</script>
+  
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
