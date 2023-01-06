@@ -105,7 +105,7 @@ text-align:center;}
     document.getElementById('manolito').setAttribute("class", "prueba100");
     }
 </script>
-
+<div id="arriba"></div> 
 <script>  
 /* 
 alert("Hello! I am an alert box!");*/
@@ -119,5 +119,49 @@ const element = document.getElementById("prueba10000");
 element.addEventListener("click", function() {
 document.getElementById("demo").outerHTML = "<h3>demonios</h3>"});
 </script>
-  
+
+<script>
+let tiempo = new Date().getHours();
+let arriba;
+if (tiempo <10){arriba = "Madrugaches! Pasa, que aínda estamos a ";}
+else if (tiempo <12){arriba = "Que xa pasou a leiteira, que estamos a ";}
+else if (tiempo >15){
+    arriba = "A funcionar, que aínda non fixeches nada en todo día e xa estamos a ";}
+let dia;
+switch (new Date().getDay()){
+    case 0:
+    dia = "Domingo"; 
+break;
+case 1:
+    dia="luns";
+break;
+case 2:
+    dia="martes";
+    break;
+case 3:
+    dia="mércores";
+    break;
+case 4:
+    dia="xoves";
+    break;
+case 5:
+    dia="venres";
+    break;
+case 6:
+    dia="sábado";
+    break;
+}
+document.getElementById("arriba").innerHTML = "Anda! " + arriba + dia; 
+</script>
+<button onclick="nosvamos()">Nos vamos, nos vamos</button>
+
+<script>
+function nosvamos() {
+  location.replace("https://carlos.sanchezdonate.com/redireccion-301-desde-sitebuilders/")
+}
+</script>
+<script>
+    /*
+  window.location.href = "https://carlos.sanchezdonate.com/redireccion-301-desde-sitebuilders/";
+</script>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
