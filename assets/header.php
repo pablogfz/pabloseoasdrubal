@@ -58,7 +58,7 @@
                 </li><li><a href="/paginanueva2">Página nueva2</a></li>
                 <li><a href="/contacto">contacto</a></li>
                 <li><a href="/carpeta/archivo-carpeta">Archivo dentro de carpeta</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Matar_un_ruise%C3%B1or" target="_blank">Enlace a wikipedia</a>
+                <li><a href="/basic" target="_blank">Página básica con cosas</a>
                 <li><a href="/css2">CSS2</a></li>
             </ul>
         </nav>
