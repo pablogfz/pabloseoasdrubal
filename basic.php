@@ -14,5 +14,5 @@ include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
 onclick="document.getElementById('eltiempo').innerHTML = Date()">
 ¿A qué día estamos?</button>
 </div>
-<p>Z5sa1dPnQ%@XDek7Gk esta es la contraseña del proyecto en Wordpress</p>
+<p>Z5sa1dPnQ%@XDek7Gk esta es la contraseña del proyecto en Wordpress que en el nuevo branch aparece con esta frase tan larga</p>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
