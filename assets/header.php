@@ -27,6 +27,9 @@
         echo '<!-- Paso de tu css-->';
         /*'<link rel="stylesheet" href="/css/pff.css">';*/
         break;
+        case 'basic':
+            echo '<link rel="stylesheet" href="/css/estilo3.css">';
+            break;
     }
         ?>
     <style>    
