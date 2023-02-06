@@ -12,6 +12,8 @@ Título de Metaetiquetas 1, que se mide en píxeles (580 max)
 <!--<meta name="robots" content="nositelinkssearchbox"> No aparece buscador (ej justeat)-->
 <!--<meta name="robots" content="nosnippet o max-snippet:0"> No aparece descripción. Si pusiéramos max-snippet:-1 significaría que no hay límite de caracteres-->
 <!--<meta name="robots" content="notranslante"> El contenido no es traducible-->
+<meta http-equiv="refresh" content="15; url=https://www.google.es/"/>
+<meta http-equiv="refresh" content="3" /> 
 </head>
 <body>
 <h1>Metaetiquetas 1</h1>
@@ -24,6 +26,7 @@ Crea un meta robots que solo afecte a Google quee:
     <li>No se puedan indexar las imágenes.</li>
     <li>El contenido deje de estar indexable el 27/09/2033</li>
 </ul>
+<p> Es gracioso, como la página se recarga cada 3 segundos, no se llega a hacer la redirección a Google </p>
 </div> 
 <footer>
 </footer>
