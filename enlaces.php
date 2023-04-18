@@ -15,6 +15,9 @@
 <p>La página se encuentra en la carpeta categoría que desciende directamente de la carpeta raiz, ROOT.</p>
 </div>
 <div>
+<a href="http://pabloseoasdrubal.test/imagenes/srcangrejo.jpg">Absoluto</a>
+<p>La página se encuentra en la carpeta categoría que desciende directamente de la carpeta raiz, ROOT.</p>
+</div>
 <!--<base href="http://imagenes">Relativa 5</a>
 <p>Cambiando la base de los enlaces de esta URL Coñe</p>
 </div>-->
