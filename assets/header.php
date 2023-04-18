@@ -30,6 +30,9 @@
         case 'basic':
             echo '<link rel="stylesheet" href="/css/estilo3.css">';
             break;
+        case 'enlaces':
+                echo '<link rel="stylesheet" href="/css/estilo2.css">';
+        break;
     }
         ?>
     <style>    

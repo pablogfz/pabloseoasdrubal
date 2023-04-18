@@ -103,4 +103,3 @@ echo cuadrado(8); echo " aquí aparece el cuadrado del número que ponga en el c
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/tablasql.php';?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
     </html>
-
