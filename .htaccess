@@ -7,3 +7,8 @@ RewriteRule .* - [L,R=404]
 
 # NOTE! FOR APACHE ON WINDOWS: Add [NC] to RewriteCond like this:
 # RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.PHP[? ].*$" [nc]
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 2 months"
+</IfModule>
