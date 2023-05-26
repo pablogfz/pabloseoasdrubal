@@ -1,0 +1,15 @@
+# Pablo González
+
+User-agent: *
+disallow: /scripts/*.js?prescindible
+disallow: /nomeves/$
+
+User-agent: YandexBot
+disallow: /
+
+User-agent: Googlebot
+disallow: /blackfriday/
+disallow: /scripts/*.js?prescindible
+disallow: /nomeves/$
+
+sitemap: https://example.com/sitemap.xml

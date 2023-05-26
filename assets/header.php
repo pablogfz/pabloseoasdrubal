@@ -3,7 +3,7 @@
     <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <meta charset="UTF-8">
-          <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST'];?>/css/estilo.css?act">
+          <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST'];?>/css/estilo.css?<?php echo date('Ym') ?>">
           <!-- <link rel="stylesheet" href="css/import.css"-->
     <title>Esta es la etiqueta Title</title>    
     <?php if (empty ($variableconstante1))

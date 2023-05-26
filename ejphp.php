@@ -88,3 +88,22 @@ for($cont = 1; $cont<= $numero; $cont++){
 }
 echo "<br>El factorial de ".$numero." es ".$factorial;
 ?>
+
+<h2>Ejercicio 9: Los números pares</h2>
+<h3>Mostrar todos los números pares que hay entre 1 y 100</h3>
+<?php
+for ($i = 1; $i <=100; $i++) {
+    if($i%2==0){
+     echo $i." es par <br>";   
+    }
+}
+?>
+<h2>Ejercicio 10: Un número pasado por la URL</h2>
+<h3>Mostrar los números múltiplos de un número pasado por la URL que hay del 1 al 100</h3>
+<?php
+for ($i =1; $i <=100; $i++) {
+    if(isset ($_GET["numero"]) && $i%$_GET ["numero"] == 0){
+        echo $i. " es múltiplo de ".$_GET ["numero"] ."<br>";
+    }
+}
+?>
