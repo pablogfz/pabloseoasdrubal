@@ -19,12 +19,12 @@
       <video:player_loc>https://www.youtube.com/embed/7_SAMrDnXOE</video:player_loc>
       <video:duration>228</video:duration>
       <video:publication_date>2023-05-30</video:publication_date>
-      <video:family_firendly>yes</video:family_friendly>
+      <video:family_friendly>yes</video:family_friendly>
       <video:rating>5,0</video:rating>
       <video:view_count>3000</video:view_count>
       <video:restriction relationship="allow">ES MX US</video:restriction>
-      <video:playform relationship="allow">web mobile tv</video:platform>
-      <video:requires_subscription>no</video:requires_suscription>
+      <video:platform relationship="allow">web mobile tv</video:platform>
+      <video:requires_suscription>no</video:requires_suscription>
       <video:uploader>Robert Palmer</video:uploader>
       <video:live>no</video:live>
       <video:tag>robert palmer, johnny and mary, canción, new wave, johnny is always running around</video:tag>
@@ -33,7 +33,7 @@
       <video:thumbnail_loc>https://w0.peakpx.com/wallpaper/416/206/HD-wallpaper-bear-and-seagulls-bear-water-seagulls-wild.jpg</video:thumbnail_loc>
       <video:title>Oso con gaviotas en busca de pesca</video:title>
       <video:description>Esto es un oso pescando en algún mar o río y hay gaviotas por ahí</video:description>
-      <video:content_loc>http://pabloseoasdrubal.test/video/oso-pescador.mp4</video:player_loc>
+      <video:content_loc>http://pabloseoasdrubal.test/video/oso-pescador.mp4</video:content_loc>
     </video:video>
      <news:news>
       <news:publication>
@@ -44,3 +44,4 @@
       <news:title>Noticia que va sobre el encabezado h1 en páginas web</news:title>
     </news:news>
       </url>
+      </urlset>
