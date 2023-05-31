@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.sitemaps.org/schemas/sitemap-news/0.9">
+        <url>
+    <loc>http://pabloseoasdrubal.test/index</loc>
+    <image:image>
+      <image:loc>http://pabloseoasdrubal.test/imagenes/spanvsdiv.jpg</image:loc>
+    </image:image>    
+  </url>
+  
+  <url>
+    <loc>http://pabloseoasdrubal.test/primerito</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi_webp/7_SAMrDnXOE/maxresdefault.webp</video:thumbnail_loc>
+      <video:title>Robert Palmer - Johnny and Mary</video:title>
+      <video:description>Es un videoclip de una canción de Robert Palmer que se llama Johnny and Mary</video:description>
+      <video:player_loc>https://www.youtube.com/embed/7_SAMrDnXOE</video:player_loc>
+      <video:duration>228</video:duration>
+      <video:publication_date>2023-05-30</video:publication_date>
+      <video:family_firendly>yes</video:family_friendly>
+      <video:rating>5,0</video:rating>
+      <video:view_count>3000</video:view_count>
+      <video:restriction relationship="allow">ES MX US</video:restriction>
+      <video:playform relationship="allow">web mobile tv</video:platform>
+      <video:requires_subscription>no</video:requires_suscription>
+      <video:uploader>Robert Palmer</video:uploader>
+      <video:live>no</video:live>
+      <video:tag>robert palmer, johnny and mary, canción, new wave, johnny is always running around</video:tag>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://w0.peakpx.com/wallpaper/416/206/HD-wallpaper-bear-and-seagulls-bear-water-seagulls-wild.jpg</video:thumbnail_loc>
+      <video:title>Oso con gaviotas en busca de pesca</video:title>
+      <video:description>Esto es un oso pescando en algún mar o río y hay gaviotas por ahí</video:description>
+      <video:content_loc>http://pabloseoasdrubal.test/video/oso-pescador.mp4</video:player_loc>
+    </video:video>
+     <news:news>
+      <news:publication>
+        <news:name>¡Google revela cómo funciona el encabezado h1 para mejorar la clasificación de páginas web!</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2023-05-31</news:publication_date>
+      <news:title>Noticia que va sobre el encabezado h1 en páginas web</news:title>
+    </news:news>
+      </url>

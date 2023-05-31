@@ -33,6 +33,9 @@
         case 'enlaces':
                 echo '<link rel="stylesheet" href="/css/estilo2.css">';
         break;
+        case 'h1news':
+            echo '<link rel="stylesheet" href="/css/estilo.css">';
+    break;
     }
         ?>
     <style>    
