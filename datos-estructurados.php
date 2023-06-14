@@ -49,7 +49,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Powerbear",
+    "name": "Powerbeear",
     "url": "https://www.powerbear.com"
   },
   "mainEntityOfPage": {
