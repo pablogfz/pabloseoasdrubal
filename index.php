@@ -101,5 +101,6 @@ echo cuadrado(8); echo " aquí aparece el cuadrado del número que ponga en el c
 <?php echo 'HOLA CON PHP2';
     echo variableconstante1;?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/tablasql.php';?>
+<h3>Qué paza</h3>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';?>
     </html>
