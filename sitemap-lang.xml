@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>http://pabloseoasdrubal.test/test/en.php</loc>
+    <xtml:link
+    rel="alternate"
+    hreflang="en"
+    href="http://pabloseoasdrubal.test/test/en.php"/>
+
+    <xtml:link
+    rel="alternate"
+    hreflang="es"
+    href="http://pabloseoasdrubal.test/idioma1.php"/>
+  </url>
+    <url>
+    <loc>http://pabloseoasdrubal.test/idioma1.php</loc>
+    <xtml:link
+    rel="alternate"
+    hreflang="en"
+    href="http://pabloseoasdrubal.test/test/en.php"/>
+
+    <xtml:link
+    rel="alternate"
+    hreflang="es"
+    href="http://pabloseoasdrubal.test/idioma1.php"/>
+  </url>
+  </urlset>
