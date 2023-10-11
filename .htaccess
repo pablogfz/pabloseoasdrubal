@@ -1,0 +1,80 @@
+# Habilitar el motor de reescritura
+RewriteEngine On
+
+# Forzar HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://pabloseoasdrubal.test%{REQUEST_URI} [R=301,L]
+
+# Eliminar la extensión .php de las URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+# Redirecciona un directorio completo a otro directorio completo 
+RewriteRule ^carpeta/(.*)$ https://pabloseoasdrubal.test/languages/$1 [R=301,L]
+
+# Crea un código de respuesta 503 en una página específica.
+RewriteCond %{REQUEST_URI} ^/paginanueva [NC]
+RewriteRule ^ - [R=503,L]
+
+# Redirecciona con un 302 todo un directorio y todas las páginas que cuelgan a una página específica
+RewriteRule ^languages/(.*)$ https://carlos.sanchezdonate.com/ [R=302,L]
+
+# Establecer la etiqueta rel="canonical" para /primerito
+<If "%{REQUEST_URI} =~ /primerito/">
+Header set Link "<https://carlos.sanchezdonate.com>; rel='canonical'"
+Header set X-Robots-Tag "noindex" 
+</If>
+
+<IfModule mod_brotli.c>
+    AddType x-font/woff .woff
+    AddType x-font/ttf .ttf
+    AddOutputFilterByType BROTLI image/svg+xml
+    AddOutputFilterByType BROTLI image/x-icon
+    AddOutputFilterByType BROTLI text/plain
+    AddOutputFilterByType BROTLI text/html
+    AddOutputFilterByType BROTLI text/xml
+    AddOutputFilterByType BROTLI text/css
+    AddOutputFilterByType BROTLI application/pdf
+    AddOutputFilterByType BROTLI text/javascript
+    AddOutputFilterByType BROTLI application/xml
+    AddOutputFilterByType BROTLI application/xhtml+xml
+    AddOutputFilterByType BROTLI application/rss+xml
+    AddOutputFilterByType BROTLI application/javascript
+    AddOutputFilterByType BROTLI application/x-javascript
+    AddOutputFilterByType BROTLI application/x-font-ttf
+    AddOutputFilterByType BROTLI application/vnd.ms-fontobject
+    AddOutputFilterByType BROTLI font/opentype font/ttf font/eot font/otf
+    AddOutputFilterByType BROTLI font/woff
+    AddOutputFilterByType BROTLI font/woff2
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 4 months"
+ExpiresByType image/webp "access plus 4 months"
+ExpiresByType image/gif "access plus 4 months"
+ExpiresByType image/png "access plus 4 months"
+ExpiresByType image/jpg "access plus 4 months"
+ExpiresByType image/jpeg "access plus 4 months"
+ExpiresByType video/mp4 "access plus 4 months"
+ExpiresByType image/ico "access plus 11 months"
+ExpiresByType image/svg+xml "access plus 4 months"
+ExpiresByType text/css "access plus 4 months"
+ExpiresByType text/javascript "access plus 4 months"
+ExpiresByType application/javascript "access plus 4 months"
+ExpiresByType application/x-javascript "access plus 4 months"
+ExpiresByType application/font-woff "access plus 1 year"
+ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+#Otra forma
+<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=31449600, public"
+</FilesMatch>
+# 2 DIAS
+<FilesMatch ".(xml|txt)$">
+Header set Cache-Control "max-age=172800, public, must-revalidate"
+</FilesMatch>
+# 4 Horas
+<FilesMatch ".(html|htm)$">
+Header set Cache-Control "max-age=14400, must-revalidate"
+</FilesMatch>

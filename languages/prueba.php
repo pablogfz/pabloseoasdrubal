@@ -3,15 +3,22 @@ $current_url = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SE
 $es_url = 'http://pabloseoasdrubal.test/idioma1.php';
 $en_url = 'http://pabloseoasdrubal.test/test/en.php';
 
-if ($lang == 'es'){
-$title = 'Hola';
-$h1 = 'Ejemplos de h1';
-$texto1 ='Este es el texto1 en español';
+// Verifica si la variable $_GET['lang'] está definida y no está vacía
+if (isset($_GET['lang']) && !empty($_GET['lang'])) {
+    $lang = $_GET['lang'];
+} else {
+    // Si no se proporciona un valor para $lang, puedes establecer un valor predeterminado aquí
+    $lang = 'es'; // Por ejemplo, aquí está configurado como español ('es')
 }
-else{
+
+if ($lang == 'es') {
+    $title = 'Hola';
+    $h1 = 'Ejemplos de h1';
+    $texto1 = 'Este es el texto1 en español';
+} else {
     $title = 'Hi';
     $h1 = 'h1 examples';
-    $texto1 ='This is the texto1 in Spanish';
+    $texto1 = 'This is the texto1 in Spanish';
 }
 ?>
 <html lang="<?php echo $lang;?>">
