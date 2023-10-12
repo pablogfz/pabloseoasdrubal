@@ -14,8 +14,7 @@ RewriteRule ^([^/]+)/?$ $1.php [L]
 RewriteRule ^carpeta/(.*)$ https://pabloseoasdrubal.test/languages/$1 [R=301,L]
 
 # Crea un código de respuesta 503 en una página específica.
-RewriteCond %{REQUEST_URI} ^/paginanueva [NC]
-RewriteRule ^ - [R=503,L]
+RedirectMatch 503 ^/paginanueva$
 
 # Redirecciona con un 302 todo un directorio y todas las páginas que cuelgan a una página específica
 RewriteRule ^languages/(.*)$ https://carlos.sanchezdonate.com/ [R=302,L]
