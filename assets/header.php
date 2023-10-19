@@ -57,15 +57,15 @@
     <header>
         <nav class="pruebarroba">
             <ul>
-            <li><a href="/index">Inicio</a></li>    
-            <li><a href="/primerito">Primerito</a></li>
-                <li><a href="/sobre-mi2">Sobre mi</a></li>
-                <li><a href="/paginanueva">Página hueva</a>
-                </li><li><a href="/paginanueva2">Página nueva2</a></li>
-                <li><a href="/contacto">contacto</a></li>
-                <li><a href="/carpeta/archivo-carpeta">Archivo dentro de carpeta</a></li>
-                <li><a href="/basic" target="_blank">Página básica con cosas</a>
-                <li><a href="/css2">CSS2</a></li>
+            <li><a href="/index.php">Inicio</a></li>    
+            <li><a href="/primerito.php">Primerito</a></li>
+                <li><a href="/sobre-mi2.php">Sobre mi</a></li>
+                <li><a href="/paginanueva.php">Página hueva</a>
+                </li><li><a href="/paginanueva2.php">Página nueva2</a></li>
+                <li><a href="/contacto.php">contacto</a></li>
+                <li><a href="/carpeta/archivo-carpeta.php">Archivo dentro de carpeta</a></li>
+                <li><a href="/basic/basic.php" target="_blank">Página básica con cosas</a>
+                <li><a href="/css2.php">CSS2</a></li>
             </ul>
         </nav>
     </header>

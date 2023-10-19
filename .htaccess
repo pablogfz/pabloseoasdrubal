@@ -1,6 +1,50 @@
 # Habilitar el motor de reescritura
 RewriteEngine On
 
+# Bloquear user-agents
+RewriteCond %{HTTP_USER_AGENT} ^.*(Googlebot|SemrushBot-BA|SemrushBot-SI|ChatGPT-User|Screaming.*Frog.*SEO.*Spider).*$ [NC]
+RewriteRule ^.*$ - [F,L]
+ErrorDocument 401 '<h1>Tienes que poner un password, pollo </h1>'
+
+# Indirección estándar
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/contacto [NC]
+RewriteRule ^test/en(.*)$ /contacto$1 [L]
+## Devolver un error 404 para /ejemplo
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/contacto [NC]
+RewriteRule ^ - [R=404,L]
+</IfModule>
+
+<FilesMatch "\.txt$">
+Header set Content-Disposition "attachment"
+</FilesMatch>
+<Files "robots.txt">
+Header set Content-Disposition "inline"
+</Files>
+
+#<IfModule mod_rewrite.c>
+#    RewriteEngine On
+#  RewriteCond %{HTTP_REFERER} !^https://sanchezdonate\.test/ [NC]
+#    RewriteCond %{HTTP_REFERER} ^https://(www\.)?google\. [NC]
+#    RewriteCond %{REQUEST_FILENAME} \.(jpg|jpeg|png|gif|webp)$ [NC]
+#    RewriteRule ^ - [R=204,L]
+#</IfModule>
+
+#<Files sitemap-lang.xml>
+#order deny,allow
+#deny from all
+#allow from 2a02:2e02:e0b0:e00:745a:d2e6:bc9d:69bb
+#</Files>
+
+#Bloqueo por contraseña
+#<IfModule mod_authn_file.c>
+#AuthUserFile C:\Users\Pablo\Documents\Github\pabloseoasdrubal\pass\.htpasswd
+#AuthName "Iniciar sesión requerido"
+#AuthType Basic
+#Require valid-user
+#</IfModule>
+
 # Forzar HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://pabloseoasdrubal.test%{REQUEST_URI} [R=301,L]
@@ -14,7 +58,7 @@ RewriteRule ^([^/]+)/?$ $1.php [L]
 RewriteRule ^carpeta/(.*)$ https://pabloseoasdrubal.test/languages/$1 [R=301,L]
 
 # Crea un código de respuesta 503 en una página específica.
-RedirectMatch 503 ^/paginanueva$
+#RedirectMatch 503 ^/paginanueva$
 
 # Redirecciona con un 302 todo un directorio y todas las páginas que cuelgan a una página específica
 RewriteRule ^languages/(.*)$ https://carlos.sanchezdonate.com/ [R=302,L]
